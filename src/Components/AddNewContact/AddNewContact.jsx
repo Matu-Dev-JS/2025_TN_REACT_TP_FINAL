@@ -1,6 +1,7 @@
 import React from 'react'
 
-const AddNewContact = ({ addNewContact }) => {
+const AddNewContact = () => {
+  const {addNewContact} = useContext(ContactContext)
     const handleSubmitNewContactForm = (event) => {
         event.preventDefault()
         const formulario = event.target

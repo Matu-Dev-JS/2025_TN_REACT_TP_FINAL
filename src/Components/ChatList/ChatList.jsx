@@ -4,8 +4,8 @@ import contacts from '../../data/contacts_data'
 import { Link } from 'react-router'
 import AddNewContact from '../AddNewContact/AddNewContact'
 
-const ChatList = ({ contacts, addNewContact }) => {
-
+const ChatList = () => {
+    const {contacts} = useContext(ContactContext)
 
     return (
         <div>
@@ -28,7 +28,7 @@ const ChatList = ({ contacts, addNewContact }) => {
                 )
             }
 
-            <AddNewContact addNewContact={addNewContact} />
+            <AddNewContact  />
         </div>
     )
 }
